@@ -113,6 +113,7 @@ resource "aws_s3_bucket" "km_blob_storage" {
   })
 }
 
+# new alert check
 resource "aws_s3_bucket" "km_public_blob" {
   #zs:skip=AC_AWS_0497 ignore
   #zs:skip=AC_AWS_0215 ignore
