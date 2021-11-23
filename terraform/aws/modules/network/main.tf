@@ -40,6 +40,7 @@ resource "aws_subnet" "km_private_subnet" {
 }
 
 # Create var.az_count public subnets, each in a different AZ
+#check exclusion
 resource "aws_subnet" "km_public_subnet" {
   count                   = var.az_count
   cidr_block              = cidrsubnet(aws_vpc.km_vpc.cidr_block, 8, var.az_count + count.index)
