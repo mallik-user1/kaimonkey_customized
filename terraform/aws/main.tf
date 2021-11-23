@@ -7,6 +7,7 @@ terraform {
   }
 }
 
+# check scan for exclusion
 provider "aws" {
   region = var.region
 }
