@@ -160,6 +160,7 @@ resource "aws_lb" "km_lb" {
   security_groups = [aws_security_group.km_alb_sg.id]
 }
 
+#no skips here
 resource "aws_lb_target_group" "km_lb_target" {
   name        = "km-lb-target-group-${var.environment}"
   port        = 80
