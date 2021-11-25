@@ -117,6 +117,7 @@ resource "aws_s3_bucket" "km_public_blob" {
   #zs:skip=AC_AWS_0215 ignore
   #zs:skip=AC_AWS_0214 ignore
   #zs:skip=AC_AWS_0207 ignore
+  #zs:skip=AC_AWS_0207 ignore
   bucket = "km-public-blob"
 }
 
