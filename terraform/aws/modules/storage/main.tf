@@ -125,6 +125,7 @@ resource "aws_s3_bucket_public_access_block" "km_public_blob" {
   #zs:skip=AC_AWS_0215 ignore
   #zs:skip=AC_AWS_0214 ignore
   #zs:skip=AC_AWS_0207 ignore
+  # nothing else
   bucket = aws_s3_bucket.km_public_blob.id
 
   block_public_acls   = false
