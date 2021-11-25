@@ -105,6 +105,7 @@ resource "aws_s3_bucket" "km_blob_storage" {
   #zs:skip=AC_AWS_0497 ignore
   #zs:skip=AC_AWS_0215 ignore
   #zs:skip=AC_AWS_0214 ignore
+  #zs:skip=AC_AWS_0207 ignore
   bucket = "km-blob-storage-${var.environment}"
   acl    = "private"
   tags = merge(var.default_tags, {
