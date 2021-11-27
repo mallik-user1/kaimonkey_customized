@@ -15,7 +15,7 @@ resource "aws_security_group" "km_rds_sg" {
     Name = "km_rds_sg_${var.environment}"
   })
 
-  # HTTP access from anywhere
+  # HTTP access from anywhere not now
   ingress {
     from_port   = 5432
     to_port     = 5432
