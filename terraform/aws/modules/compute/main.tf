@@ -112,6 +112,7 @@ resource "aws_ecs_service" "km_ecs_service" {
   })
 }
 
+#new
 resource "aws_cloudwatch_log_group" "km_log_group" {
   name              = "km_log_group_${var.environment}"
   retention_in_days = 1
