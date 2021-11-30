@@ -121,7 +121,6 @@ resource "aws_s3_bucket" "km_public_blob" {
 }
 
 resource "aws_s3_bucket_public_access_block" "km_public_blob" {
-  #zs:skip=AC_AWS_0497 ignore
   #zs:skip=AC_AWS_0215 ignore
   #zs:skip=AC_AWS_0214 ignore
   #zs:skip=AC_AWS_0207 ignore
