@@ -12,6 +12,7 @@ resource "aws_vpc" "km_vpc" {
   })
 }
 
+#change for comit check
 # Create an internet gateway to give our subnet access to the outside world
 resource "aws_internet_gateway" "km_ig" {
   vpc_id = aws_vpc.km_vpc.id
