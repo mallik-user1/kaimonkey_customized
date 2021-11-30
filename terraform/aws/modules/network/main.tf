@@ -13,6 +13,7 @@ resource "aws_vpc" "km_vpc" {
 }
 
 # Create an internet gateway to give our subnet access to the outside world
+# hde k commits
 resource "aws_internet_gateway" "km_ig" {
   vpc_id = aws_vpc.km_vpc.id
 
