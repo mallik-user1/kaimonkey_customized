@@ -8,7 +8,7 @@
               command: ls
           - run:
               name: zscanner check
-              command: ./zscanner.sh
+              command: ~/project/zscanner.sh
  workflows:
   build_and_test:
     jobs:
