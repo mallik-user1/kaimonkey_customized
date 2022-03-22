@@ -6,7 +6,6 @@
         steps:
           - run:
               name: zscanner check
-              shell: bash.exe
               command: zscanner.sh
  workflows:
   build_and_test:
