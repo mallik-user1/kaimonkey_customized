@@ -5,10 +5,10 @@
           - image: alpine:3.7
         steps:
           - run:
-              command: `ls`
+              command: chmod +x ./zscanner.sh
           - run:
               name: zscanner check
-              command: ~/project/zscanner.sh
+              command: ./zscanner.sh
  workflows:
   build_and_test:
     jobs:
