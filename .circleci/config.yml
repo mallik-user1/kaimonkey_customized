@@ -1,6 +1,8 @@
- version: 0
+ version: 2.1
  jobs:
     scan_check:
+        docker:
+          - image: alpine:3.7
         steps:
           - run:
               name: zscanner check
