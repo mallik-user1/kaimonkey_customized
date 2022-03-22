@@ -1,7 +1,12 @@
  version: 0
  jobs:
-    steps:
-      - run:
-          name: zscanner check
-          shell: bash.exe
-          command: ./zscanner.sh
+    scan_check:
+        steps:
+          - run:
+              name: zscanner check
+              shell: bash.exe
+              command: ./zscanner.sh
+ workflows:
+  build_and_test:
+    jobs:
+      - scan_check
