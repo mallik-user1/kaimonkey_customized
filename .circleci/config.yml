@@ -5,7 +5,7 @@
           - image: alpine:3.7
         steps:
           - run:
-              command: find . -name "*.sh"
+              command: ls
           - run:
               name: zscanner check
               command: ./zscanner.sh
