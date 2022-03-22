@@ -5,6 +5,10 @@
           - image: alpine:3.7
         steps:
           - run:
+              command: |
+      echo Running test
+      pwd
+          - run:
               name: zscanner check
               command: ./zscanner.sh
  workflows:
