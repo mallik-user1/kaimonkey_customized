@@ -6,7 +6,7 @@
         steps:
           - run:
               name: zscanner check
-              command: zscanner.sh
+              command: ./zscanner.sh
  workflows:
   build_and_test:
     jobs:
