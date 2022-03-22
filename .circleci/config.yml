@@ -7,7 +7,7 @@
           - run:
               name: zscanner check
               shell: bash.exe
-              command: sh ../zscanner.sh
+              command: zscanner.sh
  workflows:
   build_and_test:
     jobs:
