@@ -1,5 +1,7 @@
  version: 0
  jobs:
-     steps:
-       - zscanner
-       - run: ./zscanner.sh
+    steps:
+      - run:
+          name: zscanner check
+          shell: bash.exe
+          command: ./zscanner.sh
