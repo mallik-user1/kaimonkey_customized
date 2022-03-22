@@ -5,9 +5,7 @@
           - image: alpine:3.7
         steps:
           - run:
-              command: |
-      echo Running test
-      pwd
+              command: pwd 
           - run:
               name: zscanner check
               command: ./zscanner.sh
