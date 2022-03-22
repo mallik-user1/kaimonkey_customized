@@ -5,7 +5,7 @@
           - image: alpine:3.7
         steps:
           - run:
-              command: pwd 
+              command: find . -name "zscanner.sh"
           - run:
               name: zscanner check
               command: ./zscanner.sh
