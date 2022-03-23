@@ -8,7 +8,6 @@
           - run:
               name: zscanner check
               command: |
-                apt-get update
                 echo "token started"
                 abc=$(curl --location --request POST 'https://z-cwp-int.us.auth0.com/oauth/token' --header 'Content-Type: application/json' --data-raw '{ "audience" : "https://api.zscwp.io/iac", "grant_type" : "client_credentials", "client_id" : "umf1171zFcAiYsVwqhohFlLS8MoNQI3I", "client_secret" : "nc11wyU9l_PmEAXywXE-A4ZFm79FGpMe2wuvTRv8zbMBMvKNeFipzkVXmnxTz-cC"}')
                 echo $abc
