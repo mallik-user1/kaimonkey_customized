@@ -3,7 +3,7 @@
  jobs:
     scan_check:
         docker:
-          - image: alpine:3.7
+          - image: cimg/base:2021.04
         steps:
           - run:
               name: zscanner check
