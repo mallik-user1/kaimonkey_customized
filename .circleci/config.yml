@@ -41,7 +41,7 @@
                 else
                   echo "Failed to login to system"
                 fi
-                zscanner scan -d %system.workingDir%
+                zscanner scan -d $CIRCLE_WORKING_DIRECTORY
                 echo $?
  workflows:
   build_and_test:
