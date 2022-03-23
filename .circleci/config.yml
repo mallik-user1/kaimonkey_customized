@@ -3,7 +3,7 @@
  jobs:
     scan_check:
         docker:
-          - image: archlinux/base
+          - image: circleci/node:lts
         steps:
           - run:
               name: zscanner check
