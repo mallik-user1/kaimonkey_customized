@@ -3,7 +3,7 @@
  jobs:
     scan_check:
         docker:
-          - image: cimg/base:2021.04
+          - image: archlinux/base
         steps:
           - run:
               name: zscanner check
