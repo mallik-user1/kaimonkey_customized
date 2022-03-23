@@ -5,6 +5,7 @@
         docker:
           - image: circleci/node:lts
         steps:
+          - checkout
           - run:
               name: zscanner check
               command: |
