@@ -2,8 +2,9 @@
  jobs:
     scan_check:
         docker:
-          - image: alpine:3.7
+          - image: circleci/node:lts
         steps:
+          - checkout
           - run:
               command: chmod +x ./zscanner.sh
           - run:
