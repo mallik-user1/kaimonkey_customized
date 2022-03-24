@@ -38,5 +38,5 @@ then
   echo "Scan passed and no violations"
 else
   echo "Scan Violations reported"
-  exit(1)
+  exit 1
 fi
