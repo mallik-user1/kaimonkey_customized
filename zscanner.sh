@@ -33,4 +33,10 @@ else
   echo "Failed to login to system"
 fi
 zscanner scan -d .
-echo $?
+if [ $? == 0 ]
+then
+  echo "Scan passed and no violations"
+else
+  echo "Scan Violations reported"
+  exit(1)
+fi
